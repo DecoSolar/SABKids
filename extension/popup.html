@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type = "text/css">@import url("style.css");</style>
+</head>
+<body>
+	<div class = "container">
+		<form style = "width: 400px" action = "/action_page.php">
+			<center style = "font-weight: 900; font-size: 140%">Вход в систему</center>
+			<label for = "log"><b>Логин</b></label><br>
+			<input id = "log" type = "text" name = "log" placeholder = "Введите Логин" pattern = {3,} title = "Логин должен быть не менее 3 символов." required><br>
+		
+			<label for = "psw"><b>Пароль</b></label><br>
+			<input id = "psw" type = "password" name = "psw" placeholder = "Введите Пароль" pattern = {8,} title = "Пароль должен содержать не менее 8 символов." required><br>
+			<button id = "enter" type = "submit" value = "Войти" formaction = "http://localhost:8000/password">Войти</button>
+		</form>
+	</div>
+	
+</body>
+</html>

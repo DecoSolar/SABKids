@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+    <style type = "text/css">@import url("style2.css");</style>
+</head>
+<body>
+
+    <div class = "allThings" style="position: relative;">
+        <br>
+        <center style = "font-weight: 900; font-size: 140%">Добро пожаловать в SABKids!</center>
+        <center style = "font-weight: 300;">Это Ваш личный кабинет. Вы можете добавить нежелательные <br>
+            для вашего ребенка сайты и/или слова и фразы.</center>
+        <center><img src = "1.png" width = "650px"></img></center>
+        <div style = "position:absolute;bottom:0;right:0;">
+        <table cellspacing = "10">
+            <tr>
+            <form id = "link" action = "/action_page.php">
+                <td><i>Введите запрещенные ссылки в форму ниже. Если их несколько, введите каждую ссылку отдельно.</i></td>
+                <td><input id = "URL" name = "addlink" type = "url" placeholder = "Введите запрещенную ссылку сюда" style = "width: 250px;" required></input></td>
+                <td> <button id = "URLWord" type = "submit" value = "Отправить" style = "width: 150px;" formaction = "http://localhost:8000/geturl/url">Отправить</button></td>
+            </form>
+            </tr>
+            <tr>
+            <form id = "word" action = "/action_page.php">
+                <td><i>Введите запрещенные слова в форму ниже. Если их несколько, введите каждое слово отдельно.</i></td>
+                <td><input id = "wrd" name = "addwrd" type = "text" placeholder = "Введите запрещенное слово или фразу сюда" style = "width: 250px;" required></input></td>
+                <td><button id = "wrdclick" type = "submit" value = "Отправить" style = "width: 150px;" formaction = "http://localhost:8000/word/wrd">Отправить</button></td>
+            </form>
+            </tr>
+        </table>
+        </div>
+    </div>  	
+</body>
+</html>

@@ -1,0 +1,8 @@
+.first {
+  position: absolute;
+  z-index: 3; /* put .green-box above .dashed-box */
+  background: white;
+  width: 100%;
+  left: 100%;
+  
+}
